@@ -1,0 +1,18 @@
+ Spark3.scala file 
+ 1.Error : noclassdeffounderror: com/univocity/parsers/csv/unescapedquotehandling
+Solution : Added in pom.xml
+
+<dependency> 
+      <groupId>com.univocity</groupId> 
+      <artifactId>univocity-parsers</artifactId> 
+      <version>2.2.1</version> 
+</dependency> 
+
+2. Error : exception in thread "main" java.lang.abstractmethoderror: com.databricks.spark.xml.defaultsource.createrelation(lorg/apache/spark/sql/sqlcontext;lorg/apache/spark/sql/savemode;lscala/collection/immutable/map;lorg/apache/spark/sql/dataset;)lorg/apache/spark/sql/sources/baserelation;
+Solution : changed <version>0.3.1</version> to  <version>0.4.1</version>  in pom.xml
+
+<dependency>
+    <groupId>com.databricks</groupId>
+    <artifactId>spark-xml_2.11</artifactId>
+    <version>0.4.1</version>
+</dependency>
