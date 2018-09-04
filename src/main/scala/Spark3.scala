@@ -57,7 +57,7 @@ val sqlContext = new org.apache.spark.sql.SQLContext(sc)
 import sqlContext.implicits._
 
 val df = sqlContext.read.format("com.databricks.spark.xml").option("rowTag", "Transaction").load("xmldata")
-                 
+                
                  df.write.
     format("csv").
     option("header", "true").
