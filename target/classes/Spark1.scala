@@ -32,7 +32,7 @@ val spark = SparkSession
   .option("inferSchema", "true")
   .option("timestampFormat", "yyyy-MM-dd'T'HH:mm:ss")
   .option("mode", "failfast")
-  .option("path", "survey.csv")
+  .option("path", "survey123.csv")
   .load()
     spark.conf.set("spark.shuffle.partitions", 2)
   val df0 = df.select($"Gender", $"treatment")

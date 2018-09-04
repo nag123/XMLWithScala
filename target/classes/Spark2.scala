@@ -14,7 +14,7 @@ object Spark2 extends App {
     .option("nullValue","NA")
     .option("timestampFormat","yyyy-MM-dd'T'HH:mm:ss")
     .option("mode","failfast")
-    .load("survey123.csv")
+    .load("F:\\my_learnings\\big data with mark\\survey123.csv")
   
  df.printSchema()
  println(df.schema)
@@ -74,6 +74,8 @@ val columnSchema = StructType
    val dfcolViewGlobal = dfcol.createGlobalTempView("dfcolsurveyglobal")
      spark.catalog.listTables.show()
    spark.catalog.listTables("global_temp").show()
+  
+   
    
    
     
