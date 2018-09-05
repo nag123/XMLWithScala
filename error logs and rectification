@@ -19,3 +19,4 @@ Solution : changed <version>0.3.1</version> to  <version>0.4.1</version>  in pom
 
 
 NOTE : SparkContext is used in version 1. From version 2 , sparkSession is being used .
+       We can create only 1 session for a spark in a application.
